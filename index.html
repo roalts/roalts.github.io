@@ -1,7 +1,402 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghav Apoorv — Portfolio</title>
+  <meta name="description" content="Raghav Apoorv — Fullstack Engineer. Data pipelines, ML systems, and products people actually use." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 <body>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfTR0OHK6iLjTlN5orAEHfq%2FYoutrition-High-Fidelity-Prototype%3Fnode-id%3D11%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1" allowfullscreen></iframe>
+  <header class="site-header">
+  <nav class="nav container">
+    <a href="/" class="nav__logo">RA</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+  <main>
+    
+
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div>
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name">Raghav Apoorv</h1>
+        <p class="hero__tagline">Fullstack engineer who likes to ship. Data pipelines, ML systems, and products people actually use.</p>
+        <div class="hero__links">
+          <a href="#contact" class="btn btn--primary">Get in Touch</a>
+          <a href="#projects" class="btn btn--outline">View Projects</a>
+        </div>
+      </div>
+      <div class="photo-placeholder">
+        Your photo here<br />(replace with &lt;img&gt;)
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <h2 class="section-title">A bit about me</h2>
+    <div class="about__content">
+      <p class="about__text">
+        I've spent years in data pipelines, ML systems, and product—at Uber (market metrics, driver behavior, scalable data platforms), at Zomato (chat systems, ads, microservices), and in research at Georgia Tech (plagiarism and cheating detection at scale). I have a soft spot for AI and for building things people actually use: hiring tools, health-tech, and learning systems. I'm at my best when I'm both thinking and doing—and I'm working on doing more of the doing.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="education">
+  <div class="container">
+    <p class="section-label">Education</p>
+    <h2 class="section-title">Where I studied</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <p class="edu-card__school">Georgia Institute of Technology</p>
+        <p class="edu-card__degree">M.S. Computer Science (4.0) · Certificate in Management of Technology</p>
+        <p class="edu-card__detail">AI, ML, Computer Vision, NLP, Product Development · May 2021</p>
+      </div>
+      <div class="edu-card">
+        <p class="edu-card__school">Delhi Technological University</p>
+        <p class="edu-card__degree">B.Tech. Mathematics and Computing (3.91)</p>
+        <p class="edu-card__detail">Convenor, Technical Council · Chairperson, IEEE Student Body · 2013–2017</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="experience">
+  <div class="container">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__header">
+          <p class="timeline__company">Uber</p>
+          <p class="timeline__role">Senior Software Engineer</p>
+          <p class="timeline__meta">San Francisco Bay Area · May 2021 – Present</p>
+        </div>
+        <p class="timeline__body">
+          Built CI/CD and parity workflows for metric generation—99.9% deployment reliability. Led the competitive metric modeling library that cut dev time in half and runtime by two-thirds. Built ML models predicting rider-to-eats conversion and driver behavior. Designed a Spark/Hive data platform for driver analytics and migrated legacy Presto pipelines to Spark.
+        </p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__header">
+          <p class="timeline__company">Georgia Tech</p>
+          <p class="timeline__role">Research Scientist / TA</p>
+          <p class="timeline__meta">Atlanta · Aug 2019 – May 2024</p>
+        </div>
+        <p class="timeline__body">
+          Led plagiarism and cheating detection for CS6601 (Artificial Intelligence) for nine terms. With Prof. Thad Starner and the Jack Watson Research Group, developed Examinator—a tool that detects cheating in take-home and online exams, reviewing 2M+ submission pairs and resulting in 56+ referrals. Supported 2000+ students via Ed and office hours. Received a Thank a Teacher Award.
+        </p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__header">
+          <p class="timeline__company">Zomato</p>
+          <p class="timeline__role">Software Engineer → Tech Lead Manager</p>
+          <p class="timeline__meta">India · Jul 2017 – Aug 2019</p>
+        </div>
+        <p class="timeline__body">
+          Joined as a software engineer and was quickly promoted to Tech Lead Manager. Owned the design and delivery of an in-house chat platform (Golang, SQS, Redis, MySQL) that replaced a third-party tool and scaled to 60× the previous load—managed a team building React Native SDKs for Android and iOS, a 500+ agent management system, and a decision-tree chatbot that cut support queries by 60%. Led the monolith-to-microservices migration in Go, driving architecture decisions and coordinating across teams. Owned digital ads targeting, leveraging data science models to save ~$500K monthly, and led growth initiatives that increased the user base 10% month over month.
+        </p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__header">
+          <p class="timeline__company">Greplr</p>
+          <p class="timeline__role">Co-Founder</p>
+          <p class="timeline__meta">Delhi · Jun 2015 – Dec 2015</p>
+        </div>
+        <p class="timeline__body">
+          Built a hyperlocal super-aggregator that combined cab services, restaurants, flights, and e-commerce price comparison into one app. The core technology was acquired and used by Micromax in their "Around YU" product.
+        </p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__header">
+          <p class="timeline__company">Citigroup</p>
+          <p class="timeline__role">Software Engineer Intern</p>
+          <p class="timeline__meta">Summer 2016</p>
+        </div>
+        <p class="timeline__body">
+          Improved the regulatory stress testing system, reducing runtime by ~30%. Built a tool in Java to migrate projects from Ant to Maven and worked on migrating the code repository from SVN to Git.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <div class="container">
+    <p class="section-label">Projects</p>
+    <h2 class="section-title">Things I've built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card__img">Screenshot placeholder</div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Examinator (v3 / v4)</h3>
+          <p class="project-card__desc">
+            Cheating detection in online exams using answer rarity and timing analysis. Presented at Learning @ Scale 2023 & 2024. Processed 2M+ submissions across multiple Georgia Tech courses.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">ML</span>
+            <span class="tag">Research</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__img">Screenshot placeholder</div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Fake Yelp Reviews & QA</h3>
+          <p class="project-card__desc">
+            Ensemble model (CNN, gradient boosting, BERT) for fake review detection (~88% accuracy) and a BERT-based QA pipeline over reviews.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">NLP</span>
+            <span class="tag">BERT</span>
+            <span class="tag">CNN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__img">Screenshot placeholder</div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Byldafarm</h3>
+          <p class="project-card__desc">
+            Precision agriculture Android app: crop-mix recommendations from ~20 years of data, Bluetooth-controlled irrigation, soil sensors, and a data pipeline. Featured in Hindustan Times.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Android</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__img">Screenshot placeholder</div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Greplr — Super Aggregator</h3>
+          <p class="project-card__desc">
+            Co-founded a hyperlocal super-aggregator combining cabs, restaurants, flights, and e-commerce price comparison into one app. Core technology acquired by Micromax for their "Around YU" product.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Android</span>
+            <span class="tag">Startup</span>
+            <span class="tag">Product</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__img">Screenshot placeholder</div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Algorithmic Trading with ML</h3>
+          <p class="project-card__desc">
+            Predicted stock prices using KNN and regression models with momentum and volatility features. Optimized portfolio allocations for maximum Sharpe ratio and designed an automated Bollinger Bands trading strategy.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">ML</span>
+            <span class="tag">Finance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="patents">
+  <div class="container">
+    <p class="section-label">Patents & Publications</p>
+    <h2 class="section-title">Research output</h2>
+    <div class="patents-list">
+      <div class="patent-item">
+        <p class="patent-item__title">Examinator v4.0: Cheating Detection in Online Take-Home Exams</p>
+        <p class="patent-item__desc">Learning @ Scale 2024 — Analyzed 7,683 submissions from 1,923 students; 52 academic misconduct convictions.</p>
+      </div>
+      <div class="patent-item">
+        <p class="patent-item__title">Examinator v3.0: Cheating Detection in Online Take-Home Exams</p>
+        <p class="patent-item__desc">Learning @ Scale 2023 — Analyzed 915,831 submission pairs across three courses; identified 46 instances of cheating.</p>
+      </div>
+      <div class="patent-item">
+        <p class="patent-item__title">Examinator: A Plagiarism Detection Tool for Take-Home Exams</p>
+        <p class="patent-item__desc">Learning @ Scale 2020 — Compared 2M+ exam pairs since Spring 2019; 56 cases referred for discipline.</p>
+      </div>
+      <div class="patent-item">
+        <p class="patent-item__title">Smart Attendance Management System and Method</p>
+        <p class="patent-item__desc">Patent IN 201611040048 · IEEE TENCON 2016 — BLE-based attendance with Android app. Presented at the Rashtrapati Bhavan to the President of India.</p>
+      </div>
+      <div class="patent-item">
+        <p class="patent-item__title">Cheating detection and advanced outcome analysis for online exams</p>
+        <p class="patent-item__desc">PCT/US2023/081567 — International patent for web-based exam integrity analysis. 2023</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+  <div class="container">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <p class="skill-group__title">Languages</p>
+        <div class="skill-group__items">
+          <span class="tag">Java</span>
+          <span class="tag">Go</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PHP</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group__title">Frontend</p>
+        <div class="skill-group__items">
+          <span class="tag">React</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Redux</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group__title">Backend & Data</p>
+        <div class="skill-group__items">
+          <span class="tag">Spark</span>
+          <span class="tag">Hive</span>
+          <span class="tag">Presto</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">SQS</span>
+          <span class="tag">DynamoDB</span>
+          <span class="tag">S3</span>
+          <span class="tag">Aurora</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group__title">ML & Tools</p>
+        <div class="skill-group__items">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Git</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Android</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="awards">
+  <div class="container">
+    <p class="section-label">Awards & Leadership</p>
+    <h2 class="section-title">Recognition</h2>
+    <div class="awards-grid">
+      <div class="award-item">
+        <div class="award-item__icon">1st</div>
+        <p class="award-item__text"><strong>Code for India Hackathon</strong> (Google) — 1000+ participants</p>
+      </div>
+      <div class="award-item">
+        <div class="award-item__icon">1st</div>
+        <p class="award-item__text"><strong>Geekfest Hackathon</strong> (IBM) — 500+ participants</p>
+      </div>
+      <div class="award-item">
+        <div class="award-item__icon">2nd</div>
+        <p class="award-item__text"><strong>India–UK Tech Summit Hackathon</strong> (Barclays) — 300+ participants</p>
+      </div>
+      <div class="award-item">
+        <div class="award-item__icon">3rd</div>
+        <p class="award-item__text"><strong>Build for India Hackathon</strong> (Paytm) — 500+ participants</p>
+      </div>
+      <div class="award-item">
+        <div class="award-item__icon">&#9733;</div>
+        <p class="award-item__text"><strong>Richard E. Merwin Scholarship</strong>, IEEE Computer Society (40 students/year)</p>
+      </div>
+      <div class="award-item">
+        <div class="award-item__icon">&#9733;</div>
+        <p class="award-item__text"><strong>VP Events, GSGA</strong>, Georgia Tech (2020–21) — ran first remote New Student Convocation for 7000+ graduate students</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let's connect</h2>
+    <div class="contact__inner">
+      <p class="contact__text">I'm always open to interesting conversations, collaborations, or just saying hi.</p>
+      <div class="contact__links">
+        <a href="mailto:raghav.apoorv@gmail.com" class="btn btn--primary">Email Me</a>
+        <a href="https://linkedin.com/in/raghav-apoorv" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+        <a href="https://github.com/roalts" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Raghav Apoorv. Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a>.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav__toggle');
+  const links = document.querySelector('.nav__links');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+  }
+  document.querySelectorAll('.nav__links a').forEach(link => {
+    link.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    });
+  });
+</script>
+
 </body>
 </html>
-
