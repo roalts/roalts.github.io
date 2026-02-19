@@ -130,7 +130,7 @@ img {
 
 /* ===== Sections ===== */
 section {
-  padding: 6rem 0;
+  padding: 3.5rem 0;
 }
 
 .section-label {
@@ -148,7 +148,7 @@ section {
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: -0.03em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ===== Hero ===== */
@@ -257,6 +257,36 @@ section {
   max-width: 720px;
 }
 
+/* ===== Press Strip ===== */
+.press-strip {
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.press-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem 2rem;
+  margin-top: 0.75rem;
+}
+
+.press-item {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+
+a.press-item:hover {
+  color: var(--color-accent);
+}
+
 /* ===== Education ===== */
 .edu-grid {
   display: grid;
@@ -328,7 +358,7 @@ section {
 
 .timeline__item {
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .timeline__item:last-child {
@@ -571,8 +601,51 @@ section {
 .contact__links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.contact-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  transition: all var(--transition);
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-icon::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+}
+
+.contact-icon:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.contact-icon:hover::after {
+  opacity: 1;
 }
 
 /* ===== Footer ===== */
@@ -624,7 +697,7 @@ section {
   }
 
   section {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .section-title {
