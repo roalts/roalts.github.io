@@ -8,15 +8,15 @@
 }
 
 :root {
-  --color-bg: #0f0f0f;
-  --color-surface: #1a1a1a;
-  --color-surface-alt: #242424;
-  --color-border: #2e2e2e;
-  --color-text: #e4e4e7;
-  --color-text-muted: #a1a1aa;
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
-  --color-white: #fafafa;
+  --color-bg: #faf6f1;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3ece4;
+  --color-border: #e4dcd2;
+  --color-text: #3d3229;
+  --color-text-muted: #7a6e62;
+  --color-accent: #c4654a;
+  --color-accent-hover: #a8503a;
+  --color-white: #2b2017;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --radius: 12px;
@@ -65,7 +65,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(15, 15, 15, 0.85);
+  background: rgba(250, 246, 241, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -208,12 +208,12 @@ section {
 
 .btn--primary {
   background: var(--color-accent);
-  color: var(--color-white);
+  color: #fff;
 }
 
 .btn--primary:hover {
   background: var(--color-accent-hover);
-  color: var(--color-white);
+  color: #fff;
 }
 
 .btn--outline {
@@ -232,7 +232,7 @@ section {
   width: 280px;
   height: 340px;
   border-radius: var(--radius);
-  background: var(--color-surface);
+  background: var(--color-surface-alt);
   border: 2px dashed var(--color-border);
   display: flex;
   align-items: center;
@@ -269,11 +269,13 @@ section {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.75rem;
-  transition: border-color var(--transition);
+  box-shadow: 0 2px 8px rgba(60, 50, 40, 0.06);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .edu-card:hover {
   border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(60, 50, 40, 0.1);
 }
 
 .edu-card__school {
@@ -371,12 +373,14 @@ section {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color var(--transition), transform var(--transition);
+  box-shadow: 0 2px 8px rgba(60, 50, 40, 0.06);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .project-card:hover {
   border-color: var(--color-accent);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(60, 50, 40, 0.1);
 }
 
 .project-card__img {
@@ -437,11 +441,13 @@ section {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.5rem;
-  transition: border-color var(--transition);
+  box-shadow: 0 2px 8px rgba(60, 50, 40, 0.06);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .patent-item:hover {
   border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(60, 50, 40, 0.1);
 }
 
 .patent-item__title {
@@ -559,7 +565,7 @@ section {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: var(--color-bg);
+    background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
     padding: 1.5rem;
     gap: 1.25rem;
