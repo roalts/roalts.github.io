@@ -227,20 +227,21 @@ section {
   color: var(--color-accent);
 }
 
-/* Photo placeholder */
-.photo-placeholder {
+/* Hero photo */
+.hero__photo {
   width: 280px;
   height: 340px;
   border-radius: var(--radius);
-  background: var(--color-surface-alt);
-  border: 2px dashed var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-muted);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  scale: 2.0;
 }
 
 /* ===== About ===== */
@@ -685,7 +686,7 @@ a.press-item:hover {
     text-align: center;
   }
 
-  .photo-placeholder {
+  .hero__photo {
     margin: 0 auto;
     width: 200px;
     height: 240px;
